@@ -24,7 +24,7 @@ kubectl get pod 14.2-netology-vault -o json | jq -c '.status.podIPs'
 
 Примечание: jq - утилита для работы с JSON в командной строке
 
-Утилиту поставил командой ```apt-get install -y jq```
+### Утилиту поставил командой ```apt-get install -y jq```
 
 Запустить второй модуль для использования в качестве клиента
 
@@ -71,6 +71,7 @@ client.secrets.kv.v2.read_secret_version(
     path='hvac',
 )
 ```
+
 ## Ответ: ip был изменен, токен был использован из примера, файл 14.2/vault-pod.yml
 
 ```
